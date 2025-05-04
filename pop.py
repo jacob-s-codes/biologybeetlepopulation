@@ -23,7 +23,7 @@ def create_offspring():
     return offspring
 
 def run():
-    for i in range(num_generations):
+    for i in range(num_generations): #Loop to go over n generations
         run = create_offspring()
         BB_count = bb_count = Bb_count = B_count = b_count = 0 # Reset counts
         for child in run:
@@ -41,6 +41,7 @@ def run():
         B_count /= 36
         b_count /= 36
 
+# printing results
         print("Generation: " + str(i))
         print("Bb count: " + str(Bb_count))
         print("bb count: " + str(bb_count))
